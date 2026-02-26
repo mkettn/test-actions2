@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  schedule:
+    - cron: '0 0 * * *'  # Jeden Tag um 00:00 UTC
 
 permissions:
   contents: read
